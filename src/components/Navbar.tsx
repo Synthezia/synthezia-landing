@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Download } from "lucide-react";
 import logoIcon from "../assets/logo-icon.png";
+import { RELEASE_URL } from "../config/urls";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -60,11 +61,16 @@ export function Navbar() {
             </a>
           </div>
 
-          <button className="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-ui transition-colors duration-default flex items-center space-x-2">
+          <a
+            href={RELEASE_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-ui transition-colors duration-default flex items-center space-x-2"
+          >
             <Download className="w-4 h-4" />
             <span className="hidden sm:inline">Download for macOS</span>
             <span className="sm:hidden">Download</span>
-          </button>
+          </a>
         </div>
       </nav>
     </header>

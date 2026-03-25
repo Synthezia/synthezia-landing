@@ -1,5 +1,6 @@
 import { Download, Github, Lock, Mic, Bot } from "lucide-react";
 import sessionImage from "../assets/synthezia-session.png";
+import { RELEASE_URL, REPOSITORY_URL } from "../config/urls";
 
 export function Hero() {
   return (
@@ -22,14 +23,24 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-          <button className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-ui transition-colors duration-default flex items-center space-x-2 text-lg font-medium">
+          <a
+            href={RELEASE_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-ui transition-colors duration-default flex items-center space-x-2 text-lg font-medium"
+          >
             <Download className="w-5 h-5" />
             <span>Download for macOS</span>
-          </button>
-          <button className="border border-border-default hover:border-primary-500 text-text-primary px-8 py-4 rounded-ui transition-colors duration-default flex items-center space-x-2 text-lg font-medium">
+          </a>
+          <a
+            href={REPOSITORY_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="border border-border-default hover:border-primary-500 text-text-primary px-8 py-4 rounded-ui transition-colors duration-default flex items-center space-x-2 text-lg font-medium"
+          >
             <Github className="w-5 h-5" />
             <span>View on GitHub</span>
-          </button>
+          </a>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-4 mb-16">

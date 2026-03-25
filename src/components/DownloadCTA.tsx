@@ -1,5 +1,6 @@
-import { Download } from 'lucide-react';
-import { useInView } from '../hooks/useInView';
+import { Download } from "lucide-react";
+import { useInView } from "../hooks/useInView";
+import { RELEASE_URL } from "../config/urls";
 
 export function DownloadCTA() {
   const { ref, isInView } = useInView();
@@ -9,7 +10,7 @@ export function DownloadCTA() {
       <div
         ref={ref as React.RefObject<HTMLDivElement>}
         className={`max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center transition-all duration-700 ${
-          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          isInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
         <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6">
@@ -19,10 +20,15 @@ export function DownloadCTA() {
           Free. Open source. No account required.
         </p>
 
-        <button className="bg-primary-500 hover:bg-primary-600 text-white px-10 py-5 rounded-ui transition-colors duration-default flex items-center space-x-3 text-lg font-medium mx-auto mb-6">
+        <a
+          href={RELEASE_URL}
+          target="_blank"
+          rel="noreferrer"
+          className="bg-primary-500 hover:bg-primary-600 text-white px-10 py-5 rounded-ui transition-colors duration-default flex items-center space-x-3 text-lg font-medium mx-auto mb-6"
+        >
           <Download className="w-6 h-6" />
           <span>Download for macOS</span>
-        </button>
+        </a>
 
         <div className="flex flex-col items-center gap-4">
           <p className="text-sm text-text-muted">
