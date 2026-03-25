@@ -24,7 +24,7 @@ export function DownloadCTA() {
           href={RELEASE_URL}
           target="_blank"
           rel="noreferrer"
-          className="bg-primary-500 hover:bg-primary-600 text-white px-10 py-5 rounded-ui transition-colors duration-default flex items-center space-x-3 text-lg font-medium mx-auto mb-6"
+          className="bg-primary-500 hover:bg-primary-600 max-w-md text-white px-5 py-5 rounded-ui transition-colors duration-default flex items-center justify-center space-x-3 text-lg font-medium mx-auto mb-6"
         >
           <Download className="w-6 h-6" />
           <span>Download for macOS</span>

@@ -40,7 +40,7 @@ export function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border-subtle text-center text-sm text-text-muted">
-          <p>© 2025 Mat · Synthezia · Built with Tauri, React & Rust.</p>
+          <p>© 2025 · Synthezia · Built with Tauri, React & Rust.</p>
         </div>
       </div>
     </footer>
