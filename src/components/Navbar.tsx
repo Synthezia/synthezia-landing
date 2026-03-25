@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
-import { Download } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { Download } from "lucide-react";
+import logoIcon from "../assets/logo-icon.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -9,24 +10,26 @@ export function Navbar() {
       setIsScrolled(window.scrollY > 20);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-default ${
         isScrolled
-          ? 'bg-bg-base/85 backdrop-blur-glass border-b border-border-subtle'
-          : 'bg-transparent'
+          ? "bg-bg-base/85 backdrop-blur-glass border-b border-border-subtle"
+          : "bg-transparent"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-ui bg-primary-500 flex items-center justify-center font-bold text-white">
-              S
-            </div>
+            <img
+              src={logoIcon}
+              alt="Synthezia logo"
+              className="w-8 h-8 object-contain"
+            />
             <span className="text-xl font-semibold">Synthezia</span>
           </div>
 
