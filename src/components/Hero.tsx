@@ -66,8 +66,11 @@ export function Hero() {
         >
           <img
             src={sessionImage}
-            alt="Synthezia session"
+            alt="Synthezia session interface showing transcription in action"
             className="w-full h-auto rounded-card"
+            loading="lazy"
+            width="1200"
+            height="675"
           />
         </div>
       </div>

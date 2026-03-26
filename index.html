@@ -9,15 +9,36 @@
       name="description"
       content="Synthezia is an offline transcription tool that uses advanced speech recognition technology to convert audio into text. With Synthezia, you can transcribe your audio files without an internet connection, ensuring privacy and security for your sensitive data."
     />
-    <meta
-      property="og:image"
-      content="/src/assets/synthezia-session.png"
-    />
+    <meta property="og:image" content="/src/assets/landing-page.webp" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:image"
-      content="/src/assets/synthezia-session.png"
-    />
+    <meta name="twitter:image" content="/src/assets/landing-page.webp" />
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Synthezia",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "macOS",
+        "description": "Offline transcription tool using Whisper.cpp and Ollama AI for secure, private audio-to-text conversion",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Synthezia"
+        },
+        "featureList": [
+          "100% Offline operation",
+          "Whisper.cpp speech recognition",
+          "Ollama AI summaries",
+          "Speaker diarization",
+          "Multiple export formats (TXT, Markdown, PDF, DOCX)"
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
