@@ -68,7 +68,7 @@ export function Hero() {
         <div
           className="max-w-4xl mx-auto bg-bg-elevated border border-border-default rounded-card relative overflow-hidden transition-shadow duration-default"
           style={{
-            boxShadow: "0 0 50px 10px rgba(59, 131, 246, 0.804)",
+            boxShadow: "0 0 50px 5px rgba(59, 131, 246, 0.804)",
           }}
         >
           {/* Placeholder skeleton shown while image is loading */}
