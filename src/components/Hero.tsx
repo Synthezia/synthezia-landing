@@ -83,9 +83,6 @@ export function Hero() {
           />
         </div>
       </div>
-      <p className="absolute bottom-4 text-sm text-text-muted">
-        For any reason, if you can't use a local LLM, Synthezia can fall back to remote models (OpenRouter / OpenAI ... etc).
-      </p>
     </section>
   );
 }
