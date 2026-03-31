@@ -20,47 +20,27 @@ export function AskSynthezia() {
 
   return (
     <div className="mt-8 p-6 bg-bg-surface border border-border-subtle rounded-card max-w-3xl mx-auto">
-      <h3 className="text-lg font-semibold mb-2">Request Synthezia Download</h3>
-      <p className="text-sm text-text-secondary mb-4">
-        Enter your email to receive the download link.
-      </p>
+      <h3 className="text-lg font-semibold mb-8 text-center">
+        Request Synthezia Download
+      </h3>
 
-      <form onSubmit={handleSubmit} className="flex flex-col">
-        <label htmlFor="ask-email" className="text-sm mb-1">
-          Email
-        </label>
-        <input
-          id="ask-email"
-          type="email"
-          required
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="you@company.com"
-          className="p-3 border border-border-default rounded-md bg-bg-base text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-primary-500"
-        />
-
-        {/* platform selection removed per request */}
-
-        <div className="mt-3 flex items-center justify-between gap-4">
-          <button
-            type="submit"
-            disabled={loading || !email.trim()}
-            className="bg-primary-500 hover:bg-primary-600 disabled:opacity-50 text-white px-4 py-2 rounded-ui transition-colors duration-default"
+      <div className="flex flex-col items-center md:flex-row gap-6">
+        <div className="w-full bg-bg-base border border-border-default rounded-md p-4 flex flex-col items-center justify-center text-center">
+          <h4 className="font-semibold mb-2">Join our Discord</h4>
+          <p className="text-sm text-text-secondary mb-4">
+            Ask questions, get support, and request features in our community.
+          </p>
+          <a
+            href="https://discord.gg/your-invite"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ backgroundColor: "#5865F2" }}
+            className="text-white px-4 py-2 rounded-ui transition-opacity duration-default hover:opacity-90"
           >
-            {loading ? "Sending…" : "Request Download"}
-          </button>
-
-          <div className="text-sm text-text-muted">
-            {submitted ? (
-              <span role="status" aria-live="polite">
-                Check your inbox — link sent.
-              </span>
-            ) : (
-              <span>We never store your email.</span>
-            )}
-          </div>
+            Join Discord
+          </a>
         </div>
-      </form>
+      </div>
 
       {submitted && (
         <div className="mt-4 text-center">
