@@ -14,11 +14,8 @@ export function DownloadCTA() {
         }`}
       >
         <h2 className="text-4xl sm:text-5xl font-bold text-text-primary mb-6">
-          Start transcribing — completely offline.
+          Ask your AI assistant on Discord
         </h2>
-        <p className="text-xl text-text-secondary mb-10">
-          Free. Open source. No account required.
-        </p>
 
         <a
           href={DISCORD_URL}
