@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Download } from "lucide-react";
 import logoIcon from "../assets/logo-icon.png";
-import { RELEASE_URL } from "../config/urls";
+import { DISCORD_URL } from "../config/urls";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -73,15 +73,15 @@ export function Navbar() {
             </div>
 
             <a
-              href={RELEASE_URL}
+              href={DISCORD_URL}
               target="_blank"
               rel="noreferrer noopener"
               className="bg-primary-500 hover:bg-primary-600 text-white px-4 py-2 rounded-ui transition-colors duration-default flex items-center space-x-2 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2 focus:ring-offset-bg-base"
               aria-label="Download Synthezia for macOS"
             >
               <Download className="w-4 h-4" aria-hidden="true" />
-              <span className="hidden sm:inline">Download for macOS</span>
-              <span className="sm:hidden">Download</span>
+              <span className="hidden sm:inline">Synthezia From Discord</span>
+              <span className="sm:hidden">Discord</span>
             </a>
           </div>
         </nav>

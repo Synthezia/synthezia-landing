@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RELEASE_URL } from "../config/urls";
+import { RELEASE_URL, DISCORD_URL } from "../config/urls";
 
 export function AskSynthezia() {
   const [email, setEmail] = useState("");
@@ -31,7 +31,7 @@ export function AskSynthezia() {
             Ask questions, get support, and request features in our community.
           </p>
           <a
-            href="https://discord.gg/your-invite"
+            href={DISCORD_URL}
             target="_blank"
             rel="noopener noreferrer"
             style={{ backgroundColor: "#5865F2" }}

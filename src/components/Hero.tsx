@@ -1,7 +1,7 @@
 import { Download, Github, Lock, Mic, Bot } from "lucide-react";
 import { useState } from "react";
 import sessionImage from "../assets/synthezia-session.png";
-import { RELEASE_URL, REPOSITORY_URL } from "../config/urls";
+import { DISCORD_URL, REPOSITORY_URL } from "../config/urls";
 
 export function Hero() {
   const [imgLoaded, setImgLoaded] = useState(false);
@@ -30,22 +30,13 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <a
-              href={RELEASE_URL}
+              href={DISCORD_URL}
               target="_blank"
               rel="noreferrer"
               className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-ui transition-colors duration-default flex items-center space-x-2 text-lg font-medium"
             >
               <Download className="w-5 h-5" />
-              <span>Download for macOS</span>
-            </a>
-            <a
-              href={REPOSITORY_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="border border-border-default hover:border-primary-500 text-text-primary px-8 py-4 rounded-ui transition-colors duration-default flex items-center space-x-2 text-lg font-medium"
-            >
-              <Github className="w-5 h-5" />
-              <span>View on GitHub</span>
+              <span>Ask Synthezia From Discord</span>
             </a>
           </div>
 

@@ -1,6 +1,6 @@
 import { Download } from "lucide-react";
 import { useInView } from "../hooks/useInView";
-import { RELEASE_URL } from "../config/urls";
+import { DISCORD_URL } from "../config/urls";
 
 export function DownloadCTA() {
   const { ref, isInView } = useInView();
@@ -21,13 +21,13 @@ export function DownloadCTA() {
         </p>
 
         <a
-          href={RELEASE_URL}
+          href={DISCORD_URL}
           target="_blank"
           rel="noreferrer"
           className="bg-primary-500 hover:bg-primary-600 max-w-md text-white px-5 py-5 rounded-ui transition-colors duration-default flex items-center justify-center space-x-3 text-lg font-medium mx-auto mb-6"
         >
           <Download className="w-6 h-6" />
-          <span>Download for macOS</span>
+          <span>Ask Synthezia From Discord</span>
         </a>
 
         <div className="flex flex-col items-center gap-4">
