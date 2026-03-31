@@ -1,4 +1,5 @@
-import { Github, BookOpen, Scale } from 'lucide-react';
+import { Github, BookOpen, Scale } from "lucide-react";
+import { AskSynthezia } from "./AskSynthezia";
 
 export function Footer() {
   return (
@@ -38,6 +39,8 @@ export function Footer() {
             </a>
           </div>
         </div>
+
+        <AskSynthezia />
 
         <div className="mt-8 pt-8 border-t border-border-subtle text-center text-sm text-text-muted">
           <p>© 2025 · Synthezia · Built with Tauri, React & Rust.</p>
